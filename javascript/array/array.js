@@ -1,5 +1,5 @@
 
-// 数组排序
+// 数组冒泡排序法
 
 function sort(number) {
   var n;
@@ -164,9 +164,9 @@ var arr = [10,11,12,13,14,15,16];
 console.log("原数组:" + arr);
 console.log("选取的数组:" + slice(arr,1,5));
 
-// 通过指定函数处理数组的每个元素，并返回处理后的数组
+// 通过指定函数处理数组的每个元素，并返回处理后的结果
 
-function map (number,number1) {
+function some (number,number1) {
   for(var i = 0; i < number.length; i++) {
     if(number1(number[i])){
       return true;
@@ -179,4 +179,4 @@ function test (age) {
   return age >= 10;
 }
 console.log("原数组：" + arr);
-console.log("是否符合条件：" + map(arr,test));
+console.log("是否符合条件：" + some(arr,test));
