@@ -1,4 +1,6 @@
 
+//输出字符串在数组最后出现的位置
+
 function lastIndexOf(str, searchStr) {
   var pos = -1;
   if (str.length >= searchStr.length) {
