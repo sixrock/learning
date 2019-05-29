@@ -1,24 +1,25 @@
 
 //删除字符串的开头空格和结尾空格
 
-function jrim(str) {
-  var k = 0;
-  for (var i = 0; i < str.length; i++) {
-    if (str[i] != " ") {
-        for(var j = 0; j < i; j++) {
-          str[j] = "";
+function trim(str) {
+  var re = "";
+  var record = 0;
+  for(var i = 0; i < str.length; i++) {
+    if(str[i] != " ") {
+      record = i;
+      for(var j = str.length - 1; j > 0; j--) {
+        if(str[j] != " ") {
+          for(var k = record; k <= j; k++) {
+            re += str[k];
+            
+          }
+          return re;
         }
-        break;
+      }
     }
   }
-  for (var k = str.length - 1; k > 0; k--) {
-    if (str[k] != " ") {
-      for(var l = k; l < str.length; k++) {
-        str[l] = "";
-      };
-    }
-  }
-  return str;
+  return re;
 }
-var str = " 12345";
-console.log("数组：" + jrim(str));
+var str = "    12345  ";
+console.log(str);
+console.log("数组：" + trim(str));

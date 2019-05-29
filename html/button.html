@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>button标签</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1 id="hhh">&lt;button>标签</h1>
+    <p>&lt;button> 标签定义一个按钮</p>
+    <p>在 button 元素内部，您可以放置内容，比如文本或图像。这是该元素与使用 input 元素创建的按钮之间的不同之处</p>
+    <p>&lt;button> 与 &lt;/button> 标签之间的所有内容都是按钮的内容</p>
+    <p>请始终为按钮规定 type 属性。Internet Explorer 的默认类型是 "button"，而其他浏览器中的默认值是 "submit"</p>
+    <p><strong>属性：</strong></p>
+    <p>autofocus	值：autofocus	规定当页面加载时按钮应当自动地获得焦点</p>
+    <p>disabled	值：disabled	规定应该禁用该按钮</p>
+    <button type="button" onclick="add()" autofocus>你好</button>
+    <button type="button" onclick="add()" disabled>你好</button>
+    <button type="button" onclick="add()" >你好</button>
+    <script>
+    var i = 5;
+    var o = 10;
+    function add () {
+      document.getElementById("hhh").innerHTML = (i + o);
+    }
+    </script>
+  </body>
+</html>
