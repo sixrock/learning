@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>optgroup标签</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <h1>&lt;optgroup>标签</h1>
+  <p>&lt;optgroup> 标签定义选项组</p>
+  <p>optgroup 元素用于组合选项。当您使用一个长的选项列表时，对相关的选项进行组合会使处理更加容易</p>
+  <p>label(必写) 值：text 为选项组规定描述</p>
+  <p>disabled 值：disabled 规定禁用该选项组</p>
+  <select>
+    <option value="你">你</option>
+    <option value="我">我</option>
+    <optgroup label="名称">
+      <option value="他">他</option>
+      <option value="她">她</option>
+    </optgroup>
+  </select>
+  <select>
+    <optgroup label="Swedish Cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+    </optgroup>
+    <optgroup label="German Cars">
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </optgroup>
+  </select>
+</body>
+
+</html>

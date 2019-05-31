@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>legend标签</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>&lt;legend>标签</h1>
+    <p>legend 元素为 fieldset 元素定义标题</p>
+    <p>align 值：top bottom left right 为fieldset标题定义对齐方式</p>
+    <fieldset>
+    <lenged></lenged>
+      年龄：<input type="text" list="name" id="name2"><br>
+      好：<input type="text" list="name"><br>
+      喜欢的颜色：<input type="color" id="name1"><br>
+      <datalist id="name">
+          <option value="你好"></option>
+          <option value="他好"></option>
+          <option value="我好"></option>
+      </datalist>
+      密码：<input type="password">
+      <input type="datetime">
+      <input type="button" onclick="check()">
+      <script>
+      function check() {
+        if(name2.value == "你好") {
+          document.getElementById("name3").innerHTML = ("哈哈哈");
+        }
+      }
+      </script>
+    </fieldset>
+    <p id="name3"></p>
+  </body>
+</html>
