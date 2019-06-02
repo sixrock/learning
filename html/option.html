@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>option标签</title>
+  <meta charset="utf-8">
+</head>
+
+<head>
+  <h1>&lt;option>标签</h1>
+  <p>option 元素定义下拉列表中的一个选项</p>
+  <p>option 元素位于 select 元素内部</p>
+  <p>浏览器将 &lt;option> 标签中的内容作为 &lt;select> 标签的菜单或是滚动列表中的一个元素显示</p>
+  <p>&lt;option> 标签可以在不带有任何属性的情况下使用，但是您通常需要使用 value 属性，此属性会指示出被送往服务器的内容</p>
+  <p>请与 select 元素配合使用此标签，否则这个标签是没有意义的</p>
+  <p>如果列表选项很多，可以使用 <optgroup> 标签对相关选项进行组合</p>
+  <p>disabled 值：disabled 规定此选项应在首次加载时被禁用</p>
+  <p>value 值：text 定义送往服务器的选项值</p>
+  <select>
+    <option value="你好">你好</option>
+    <option value="他好">他好</option>
+    <option value="它好">它好</option>
+    <optgroup label="呵呵">
+      <option value="都好">都好</option>
+      <option value="哈哈">哈哈</option>
+    </optgroup>
+  </select>
+</head>
+
+</html>
