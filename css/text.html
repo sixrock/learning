@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS文本</title>
+  <meta charset="utf-8">
+  <style>
+    p {
+      text-indent: 3em
+    }
+
+    div {
+      width: 500px;
+    }
+
+    p {
+      text-indent: 20%;
+    }
+
+    div#outer {
+      width: 500px;
+    }
+
+    div#inner {
+      text-indent: 10%;
+    }
+
+    h1 {
+      text-align: center
+    }
+
+    .name {
+      text-align: left
+    }
+
+    #name {
+      text-align: right
+    }
+
+    .name1 {
+      text-align: justify
+    }
+
+    #name5 {
+      word-spacing: 3em;
+    }
+  </style>
+</head>
+
+<body>
+  <p>文本缩进</p>
+
+
+  <div>
+    <p>this is a paragragh</p>
+  </div>
+
+
+  <div id="outer">
+    <div id="inner">some text. some text. some text.
+      <p>this is a paragragh.</p>
+    </div>
+  </div>
+  <h1>中心对齐</h1>
+  <h1 class="name">左对齐</h1>
+  <h1 id="name">右对齐</h1>
+  <h1 class="name1">两端对齐</h1>
+  <p id="name5">字间隔</p>
+</body>
+
+</html>
