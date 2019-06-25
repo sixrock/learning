@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>隐藏当前&lt;p>元素</title>
+<meta charset="utf-8"> 
+<title>W3Cschool教程(w3cschool.cn)</title> 
+<script src="jquery-1.4.2.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+</script>
+</head>
+<body>
+
+<p>如果你点我，我就会消失。</p>
+<p>点我消失!</p>
+<p>点我也消失!</p>
+
+</body>
+</html>

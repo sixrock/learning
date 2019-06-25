@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>获取class为intor的p元素</title>
+<script src="jquery-1.4.2.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p.intro").hide();
+  });
+});
+</script>
+</head>
+<body>
+
+<h2 class="intro">这是一个标题</h2>
+<p class="intro">这是一个段落，点击按钮隐藏。</p>
+<p>这是另一个段落，点击按钮不会隐藏。</p>
+<button>点我</button>
+
+</body>
+</html>

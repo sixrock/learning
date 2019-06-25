@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>选取第一个 &lt;ul> 元素的第一个 &lt;li> 元素</title>
+  <script src="jquery-1.4.2.min.js">
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("button").click(function () {
+        $("ul li:first").hide();
+      });
+    });
+  </script>
+</head>
+
+<body>
+
+  <p>List 1:</p>
+  <ul>
+    <li>Coffee</li>
+    <li>Milk</li>
+    <li>Tea</li>
+  </ul>
+
+  <p>List 2:</p>
+  <ul>
+    <li>Coffee</li>
+    <li>Milk</li>
+    <li>Tea</li>
+  </ul>
+
+  <button>点我</button>
+
+</body>
+
+</html>

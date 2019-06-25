@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>选取所有 target 属性值不等于 "_blank" 的 &lt;a> 元素</title>
+<meta charset="utf-8">
+<script src="jquery-1.4.2.min.js">
+</script>jquery-1.4.2.min.js
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("a[target!='_blank']").hide();
+  });
+});
+</script>
+</head>
+<body>
+
+<h2>这是标题</h2>
+<p>这是一个段落。</p>
+<p>这是另外一个段落。</p>
+<p><a href="http://www.w3cschool.cn/html/" target="_blank">HTML 教程</a></p>
+<p><a href="http://www.w3cschool.cn/css/">CSS 教程</a></p>
+<button>点我</button>
+
+</body>
+</html>

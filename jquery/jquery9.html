@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>选取所有 type="button" 的 &lt;input> 元素 和 &lt;button> 元素</title>
+<meta charset="utf-8">
+<script src="jquery-1.4.2.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $(":button").hide();
+  });
+});
+</script>
+</head>
+<body>
+
+<h2>这是标题</h2>
+<p>这是一个段落。</p>
+<p>这是另外一个段落。</p>
+<button>点我</button>
+
+</body>
+</html>
