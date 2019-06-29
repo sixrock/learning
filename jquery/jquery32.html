@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="jquery-1.4.2.min.js">
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("img").before("<b>之前</b>");
+  });
+
+  $("#btn2").click(function(){
+    $("img").after("<i>之后</i>");
+  });
+});
+</script>
+</head>
+
+<body>
+<img src="/statics/images/logo.png" >
+<br><br>
+<button id="btn1">之前插入</button>
+<button id="btn2">之后插入</button>
+</body>
+</html>
