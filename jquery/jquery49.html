@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>规定当 DOM 完全加载时要执行的函数</title>
+<script src="jquery-1.4.2.min.js">
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").slideToggle();
+  });
+});
+</script>
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+<button>Toggle between slide up and slide down for a p element</button>
+
+</body>
+</html>

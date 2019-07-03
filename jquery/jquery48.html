@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>接受一个已有的函数，并返回一个带特定上下文的新的函数</title>
+<script src="jquery-1.4.2.min.js">
+$(document).ready(function(){
+  var objPerson = {
+    name: "John Doe",
+    age: 32,
+    test: function(){
+      $("p").after("Name: " + this.name + "<br> Age: " + this.age);
+    }
+  };
+  $("button").click($.proxy(objPerson,"test"));
+});
+</script>
+</head>
+<body>
+
+<button>执行 test 函数</button>
+<p></p>
+
+</body>
+</html>

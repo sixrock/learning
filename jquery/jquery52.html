@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>添加/触发 select 事件</title>
+<script src="jquery-1.4.2.min.js">
+$(document).ready(function(){
+  $("input").select(function(){
+    alert("Text marked!");
+  });
+});
+</script>
+</head>
+<body>
+
+<input type="text" value="Hello World">
+<p>Select some text inside the input field.</p>
+
+</body>
+</html>

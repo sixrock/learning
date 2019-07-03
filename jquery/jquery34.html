@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>添加/触发 change 事件</title>
+<script src="jquery-1.4.2.min.js">
+$(document).ready(function(){
+  $("input").change(function(){
+    alert("The text has been changed.");
+  });
+});
+</script>
+</head>
+<body>
+
+<input type="text">
+<p>Write something in the input field, and then press enter or click outside the field.</p>
+
+</body>
+</html>

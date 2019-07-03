@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>向 &lt;p> 元素添加一个单击事件</title>
+<script src="jquery-1.4.2.min.js">
+$(document).ready(function(){
+  $("p").bind("click",function(){
+    alert("The paragraph was clicked.");
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Click me!</p>
+
+</body>
+</html>

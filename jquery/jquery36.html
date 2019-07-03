@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>向匹配元素的当前或未来的子元素添加处理程序</title>
+<script src="jquery-1.4.2.min.js">
+$(document).ready(function(){
+  $("div").delegate("p","click",function(){
+    $("p").css("background-color","pink");
+  });
+});
+</script>
+</head>
+<body>
+
+<div style="background-color:yellow">
+<p>This is a paragraph inside a div element.</p>
+</div>
+<p>This is a paragraph.</p>
+
+</body>
+</html>

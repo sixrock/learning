@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>添加/触发 submit 事件</title>
+<script src="jquery-1.4.2.min.js">
+$(document).ready(function(){
+  $("form").submit(function(){
+    alert("Submitted");
+  });
+});
+</script>
+</head>
+<body>
+
+<form action="">
+First name: 
+<input type="text" name="FirstName" value="Mickey"><br>
+Last name: 
+<input type="text" name="LastName" value="Mouse"><br>
+<input type="submit" value="Submit">
+</form> 
+
+</body>
+</html>

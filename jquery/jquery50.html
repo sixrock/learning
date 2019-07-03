@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>添加/触发 resize 事件</title>
+<script src="jquery-1.4.2.min.js">
+x=0;
+$(document).ready(function(){
+  $(window).resize(function(){
+    $("span").text(x+=1);
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Window resized <span>0</span> times.</p>
+<p>Try resizing your browser window.</p>
+
+</body>
+</html>

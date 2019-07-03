@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>向被选元素添加一个或多个事件处理程序。该处理程序只能被每个元素触发一次</title>
+<script src="jquery-1.4.2.min.js">
+$(document).ready(function(){
+  $("p").one("click",function(){
+    $(this).animate({fontSize:"+=6px"});
+  });
+});
+</script>
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<p>Click any p element to increase its text size. The event will only trigger once for each p element.</p>
+
+</body>
+</html>
